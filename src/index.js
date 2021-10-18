@@ -1,14 +1,15 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import MuiThemeProvider from "@material-ui/core/styles/MuiThemeProvider";
 
 ReactDOM.render(
-  <React.StrictMode>
+  <MuiThemeProvider>
     <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+  </MuiThemeProvider>,
+  document.getElementById("root")
 );
 
 // If you want to start measuring performance in your app, pass a function
